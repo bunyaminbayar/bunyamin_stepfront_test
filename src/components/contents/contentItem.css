@@ -1,0 +1,8 @@
+.contentItem {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+}

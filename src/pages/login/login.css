@@ -1,0 +1,85 @@
+.login {
+    height: calc(100vh - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginTitle {
+    font-size: 50px;
+    color: #bbbdd9;
+}
+
+.loginForm {
+    background-color: #202540;
+    padding: 10px 15px 20px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 1px 1px #ffffff14;
+}
+
+.erroMessage {
+    color: #b619b2;
+    font-style: italic;
+    transition: 0.5s;
+}
+
+.loginForm input {
+    background-color: transparent !important;
+    color: #bbbdd9 !important;
+    border-color: #404575 !important;
+    outline: none !important;
+    border-radius: 10px !important;
+    margin: 30px 0;
+}
+
+.loginForm input:focus {
+    color: #b619b2 !important;
+    background-color: transparent !important;
+    border-color: #b619b2 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.loginForm .form-group {
+    position: relative;
+}
+
+.loginForm label {
+    color: #bbbdd9;
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    transition: 0.3s;
+}
+
+
+/* User Focus or fill input label animated top of input */
+.loginForm label:has(+ input:hover) {
+    top: -25px !important;
+}
+
+.loginForm label:has(+ input:not(:placeholder-shown)) {
+    top: -25px !important;
+}
+
+.loginForm .btnFormSubmit {
+    background-color: #b619b2;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: auto;
+    display: block;
+}
+
+.loginForm .btnFormSubmit:hover , .loginForm .btnFormSubmit:focus , .loginForm .btnFormSubmit:active {
+    background-color: #8b1a88 !important;
+    color: rgba(255, 255, 255, 0.658);
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.loginForm a:hover {
+    text-decoration: none;
+}
