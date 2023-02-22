@@ -1,0 +1,29 @@
+.usersPage {
+    text-align: center;
+    width: 100%;
+}
+
+.usersCards {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.usersList {
+    display: inherit;
+    margin-bottom: 0;
+}
+
+.usersList li {
+    list-style: none;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.usersList li a {
+    color: #444;
+}

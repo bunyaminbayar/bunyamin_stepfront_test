@@ -1,6 +1,3 @@
-## Live Demo
-
-(https://solodevs.com/simple_game_list/)
 
 ## Available Scripts
 

@@ -4,6 +4,8 @@ import TopBar from './components/topbar/TopBar';
 import Login from './pages/login/Login';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import UserMessage from './components/userMessage/UserMessage';
+import UsersList from './pages/usersList/UsersList';
+import UserDetay from './pages/userDetay/UserDetay';
 
 export const UserLoginGlobal = React.createContext();
 export const UserMessageText = React.createContext();
@@ -29,6 +31,22 @@ export default function App() {
                 </UserLoginGlobal.Provider>
                 <UserMessageText.Provider value={{ setUserMessage, GToken }}>
                   <UserMessage />
+                </UserMessageText.Provider>
+              </>
+            }
+          />
+          <Route exact path='/usersList' children={
+              <>
+                <UserMessageText.Provider value={{ setUserMessage, GToken }}>
+                  <UsersList />
+                </UserMessageText.Provider>
+              </>
+            }
+          />
+          <Route exact path='/userDetay/:id' children={
+              <>
+                <UserMessageText.Provider value={{ setUserMessage, GToken }}>
+                  <UserDetay />
                 </UserMessageText.Provider>
               </>
             }

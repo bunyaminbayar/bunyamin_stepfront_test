@@ -34,7 +34,8 @@ export default function TopBar() {
           <li className='topListItem'>
             {gUserStatus ? (
               <>
-                <Link to={'/'}>Home Page</Link>
+                <Link to={'/'}>Home Page </Link>
+                <Link to={'/usersList'}> | Users List</Link>
               </>
             ) : null}
           </li>

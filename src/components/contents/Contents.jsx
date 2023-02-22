@@ -1,8 +1,8 @@
+import './contentItem.css'
 import React, { useEffect, useState } from 'react';
 import { useContext } from 'react';
 import { UserLoginGlobal } from '../../App';
 import axios from 'axios';
-import './contentItem.css'
 
 export default function Contents() {
 

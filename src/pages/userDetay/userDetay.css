@@ -1,9 +1,13 @@
-.contentItem {
+.userDetayPage {
+    text-align: center;
+}
+
+.userDetayCard {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     border-radius: 10px;
     display: inline-block;
     margin-top: 50px;
-    padding-top: 10px;
+    padding: 20px;
 }
